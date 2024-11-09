@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Café das Estrelas</title>
+</head>
+
+<body>
+    <div class="caixa-video">
+        <video src="./videos/coffee2.mp4" loop muted autoplay></video>
+        <div class="mascara"></div>
+    </div>
+
+    <header class="header">
+        <section>
+            <a href="#">
+                <img src="./img/logo.png" alt="logo-cafeteria">
+            </a>
+
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#" onclick="mostrarModal()">Endereço</a>
+            </nav>
+
+        </section>
+    </header>
+
+        <section class="caixa-principal">
+            <div>
+                <h3>Programe na Melhor Cafeteria da Cidade</h3>
+                <p>O refúgio ideal para programadores que buscam inspiração. Com cafés especiais e Wi-Fi rápido, aqui você encontra o ambiente perfeito para codar, trocar ideias e dar uma pausa produtiva no dia. Entre e descubra seu próximo espaço de inovação!</p>
+                <a class="botao-link">Confira Mais</a>
+            </div>
+        </section>
+
+    <section class="caixa-sobre">
+        <h2 class="titulo"><span>Sobre</span> Nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-imagem">
+                <img src="./img/about-img.jpeg" alt="">
+            </div>
+            
+            <div class="sobre-texto">
+                <h3>O que faz nosso café especial?</h3> 
+                <p>Nosso café é especial porque cada detalhe é pensado para criar uma experiência única. Selecionamos grãos de alta qualidade, preparados com técnicas que realçam os sabores e aromas em cada xícara. Além disso, oferecemos um ambiente acolhedor e inspirador, perfeito para quem busca um espaço tranquilo para focar, criar e se conectar. No Café das Estrelas, cada café é uma viagem pelo universo de sabores e sensações!</p> 
+                <a class="botao-link">Saiba Mais</a>          
+            </div>
+        </div>
+    </section>
+
+    <section class="depoimentos">
+        <h2 class="titulo"><span>Depoimentos</span> de Clientes</h2>
+        <div class="depoimentos-container">
+            <div class="depoimento">
+                <p>"O ambiente é incrível! Consegui trabalhar com total foco e o café estava delicioso!"</p>
+                <p><strong>- Maria Joana</strong></p>
+            </div>
+            <div class="depoimento">
+                <p>"É o lugar perfeito para programadores. Wi-Fi rápido e ótimo atendimento!"</p>
+                <p><strong>- Fred Diniz</strong></p>
+            </div>
+            <div class="depoimento">
+                <p>"Cada xícara aqui é uma experiência. Ambiente acolhedor e inspirador!"</p>
+                <p><strong>- Jade Rockefeller</strong></p>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <div class="modal">
+        <h3 class="titulo"><span> Nosso</span> Endereço</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.3933308089604!2d-81.57331492450851!3d28.37718567580512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7ee634caa5f7%3A0xa71e391fd01cf1a0!2sWalt%20Disney%20World%20Resort!5e0!3m2!1spt-BR!2sbr!4v1731117731298!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
